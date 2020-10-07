@@ -1,0 +1,18 @@
+/* this is just a test */
+wrp{
+    overflow:auto;
+}
+
+img{
+    height:auto;
+    width:100%;
+}
+
+.upper{
+    z-index:2;
+    position:relative
+}
+.lower{
+    z-index:-1;
+    position: absolute;
+}

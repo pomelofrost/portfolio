@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    color:black;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: none;
+    color:#111111;
+  }
+  
+a:active {
+    text-decoration: none;
+  }
+
+
+/* CUSTOM CSS */
+/* html{
+    overflow:hidden;
+} */
+
+
+img{
+    width:100%;
+    height:auto;
+}
+    
+/* typography */
+@font-face {
+    font-family:"FoundersGrotesk";
+    font-weight:300;
+    font-style: normal;
+    src: url("font/FoundersGrotesk300.woff") format("woff")
+}
+
+@font-face {
+    font-family:"FoundersGrotesk";
+    font-weight:400;
+    font-style: normal;
+    src: url("font/FoundersGrotesk400.woff") format("woff")
+}
+
+@font-face {
+    font-family:"FoundersGrotesk";
+    font-weight:500;
+    font-style: normal;
+    src: url("font/FoundersGrotesk500.woff2") format("woff2")
+}
+
+@font-face {
+    font-family:"FoundersGrotesk";
+    font-weight:700;
+    font-style: normal;
+    src: url("font/FoundersGrotesk700.woff2") format("woff2")
+}
+
+h1,h2,h3,h4,h5,a,p{
+    font-family:"FoundersGrotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    line-height:1.5;
+}
+
+h1{
+    font-weight:700;
+    font-size:70px;
+}
+
+h2{
+    font-weight:500;
+    font-size:40px;
+    line-height:1.5;
+}
+
+
+h3{
+    font-weight:400;
+    font-size:24px;
+    line-height:1.5;
+    padding-top:20px;
+}
+
+h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top:20px;
+}
+
+h5{
+    font-weight:500;
+    padding-top:20px;
+    line-height:33px;
+    color:#5B5B5B;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:20px;
+    line-height:33px;
+    color:#5B5B5B;
+    font-weight:300;
+}
+
+/* page layout */
+
+.left{
+    padding-left:6vw;
+    padding-top:2vw;
+    box-sizing:border-box;
+}
+
+
+ul{
+    position: absolute;
+    bottom:2vw;
+}
+
+.right{
+    /* background-color:#f9f9f9; */
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.projectWrapper{
+    height:100vh;
+}
+
+.bg{
+    box-sizing:border-box;
+    position:absolute;
+}
+
+.bg img{
+    width:50vw;
+    height:100vh;
+
+}
+
+.project{
+    position: relative;
+    padding-top:35vh;
+    padding-bottom:10vh;
+    width:80%;
+    display:block;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.project a{
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: auto;
+    text-align:left;
+}
+
+.project img{
+    display:block;
+    max-height:60vh;
+    max-width:100%;
+    width:auto;
+    margin-bottom:17px;
+}
+
+.description{
+    padding-top:6vw;
+    width:70%;
+}
+/* project pagees */
+main{
+    /* padding: 60px 60px 120px 60px; */
+    background-color:#ffffff;
+
+}
+
+/* splash */
+header{
+    margin:0px;
+    padding-left:10vw;
+    padding-right:10vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* column-width:254px; */
+    column-gap:49px;
+    padding-top:32px;
+    background-color:#EE5C3E;
+    /* height:120vh; */
+}
+
+header img{
+    grid-column-start:1;
+    grid-column-end:5;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    height:auto;
+    
+}
+
+header h1{
+    line-height:40px;
+    grid-column-start:1;
+    grid-column-end:3;
+    color:#ffffff;
+    align-self:start;
+}
+
+header h2{
+    grid-column-start:3;
+    grid-column-end:5;
+    color:#ffffff;
+    align-self:start;
+    padding-bottom:40px;
+}
+
+header p{
+    color:#ffffff;
+}
+/* project info */
+.collaborators{
+    grid-column-start:1;
+    grid-column-end:2;
+    color:#ffffff;
+    padding-bottom:40px;
+}
+.role{
+    grid-column-start:2;
+    grid-column-end:3;
+    color:#ffffff;
+}
+.tools{
+    grid-column-start:3;
+    grid-column-end:4;
+    color:#ffffff;
+}
+.duration{
+    grid-column-start:4;
+    grid-column-end:5;
+    color:#ffffff;
+}
+
+
+/* end of splash */
+
+.text{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap:32px;
+    padding-top:80px;
+    padding-left:8vw;
+    padding-right:8vw;
+}
+
+.intro *{
+    grid-column-start:2;
+    grid-column-end:6;
+}
+
+.intro h2{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.text h2{
+    grid-column-start:2;
+    grid-column-end: 6;
+}
+
+.text p{
+    grid-column-start:2;
+    grid-column-end:6;
+}
+
+.text div{
+    grid-column-start:2;
+    grid-column-end:6;
+}
+
+.text .leftblock{
+    grid-column-start:2;
+    grid-column-end: 4;
+    align-self: center;
+}
+
+.text .rightblock{
+    grid-column-start:4;
+    grid-column-end: 6;
+}
+
+
+.media{
+    margin:0px;
+    padding-left:10vw;
+    padding-right:10vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:49px;
+    padding-top:80px;
+}
+
+.media *{
+    grid-column-start:1;
+    grid-column-end: 5;
+    width:100%;
+}
+
+iframe{
+    grid-column-start:1;
+    grid-column-end: 5;
+    width:100%;
+}
+
