@@ -79,35 +79,117 @@
                         <li>Shipping costs will be shown immediately after the variant selection is completed, with the final price reflected on the Buy Bar.</li>
                     </ul>                
                 </div>
+                <img src="img/pdp/Solution_screens.webp" alt="">
                 </section>
             <section>
             <div class="textWrap">
-                <h2>Improving the Flow</h2>
-                <p>After reviewing the previous design with product team and conducting user testing, I found that one problem with the design was that the entry point for fair pricing education is too late in the flow to impact user’s perception of Wish products as a whole.T he new design moves the fair pricing education to the feed, which makes it more visible and more effective to impact both the decision-making process of product selection and purchase.</p>
+                <h2>The process</h2>
+                <ul>
+                    <li>Problem deep dive</li>
+                    <li>Ideation</li>
+                    <li>User testing</li>
+                    <li>Delivering</li>
+                </ul>
             </div>
-                <img src="img/fairpricing/flow.png" alt="">
             </section>
             <section>
             <div class="textWrap">
-                <h2>Diagram Explorations</h2>
+                <h2>Problem deep dive</h2>
                 <p>While gathering feedback from the design and product teams, I created several iterations on the diagram itself to deliver the concept modal in a straight-forward and simple way. I explored different levels of explicitness and format and ran user interviews to test out which diagram performs the best. </p>
             </div>
-                <img src="img/fairpricing/diagramExplorations.png" alt="">
+            <img src="img/PDP/Problem1.webp" alt="">
             <div class="textWrap">
-                <p>After the testing, we’ve decided on a more compact format while still explicitly illustrates the flow of production.</p>
+                <p>Then, we did in-depth competitive analysis, looking at other product’s PDP pages.</p>
+            </div> 
+            <img src="img/PDP/Problem2.webp" alt="">
+            <div class="textWrap">
+                <p>TWe also did a cross-functional workshop, auditing pain points of the current PDP.</p>
+            </div> 
+            <img src="img/PDP/Problem3.webp" alt="">
+            <div class="textWrap">
+                <p>Then, we did in-depth competitive analysis, looking at other product’s PDP pages.</p>
             </div> 
             </section>
             <section>
             <div class="textWrap">
                 <h2>Final Designs</h2>
-                <p>With additional entry points, the final designs brings fair pricing information throughout the shopping flow.</p>
+                <p>We identified 3 main pain points about the current PDP, all related to trust on our platform:</p>
+                <ul>
+                    <li><b>Transparency on pricing</b><br>
+                        As illustrated above, on average, the price they see on the PDP initially is only 40% of the price customers  will see at checkout, causing a large drop off rate in cart. </li>
+                    <li>
+                        <b>Biased reviews</b><br>
+                        For products with no reviews, the store review is instead displayed at the same space with no clear distinction. Therefore, most products has thousands of “reviews” which looks suspicious to many customers.
+                    </li>
+                    <li>
+                        <b>Inaccurate Information</b><br>
+                        As many of our merchants are from non-English speaking countries, information on the product listings are often auto-translated, or just with keywords that don’t connect as complete sentences. Sometimes information accuracy is lost in translation.
+                    </li>
+                </ul>
             </div>
-                <h3>In Feed</h3>
-                <img src="img/fairpricing/finalInFeed.png" alt="">
-                <h3>In Product Details Page</h3>
-                <img src="img/fairpricing/finalInPDP.png" alt="">
             </section>
-       
+            <section>
+                <div class="textWrap">
+                    <h2>Ideation</h2>
+                    <p>For 2 weeks, I met with the working group everyday to discuss different directions with Lo-fidelity prototypes.</p>
+                </div>
+                <img src="img/PDP/Ideation.webp" alt="">
+            </section>
+            <section>
+                <div class="textWrap">
+                    <h2>User testing</h2>
+                    <p>I came up with a high fidelity working prototype to bring to user research:</p>
+                </div>
+                <img src="img/PDP/Ideation.webp" alt="">
+                <div class="textWrap">
+                    <h2>User testing</h2>
+                    <p>I came up with a high fidelity working prototype to bring to user research:</p>
+                </div>
+                <div class="textWrap">
+                    <p>Working with the user researcher on the research plan, we ended up conducting 8 interviews:</p>
+                    <ul>
+                        <li>4 Wish users</li>
+                        <li>4 non-Wish users</li>
+                    </ul>
+                    <p>to evaluate whether the design elevate trust in existing users and potential new users.</p>
+                </div>
+                <img src="img/PDP/Userresearch.webp" alt="">
+                <div class="textWrap">
+                    <p>Key research findings include:</p>
+                    <ul>
+                        <li>Overall, Wish users felt the new PDP design brought Wish’s look-and-feel up to modern app standards, while providing a layout that allowed them to quickly parse through relevant sections about the product.</li>
+                        <li>Most participants were unable to comprehend that they needed to make all variation selections to see available shipping, leaving them unable to comprehend why there was a blank Delivery/Shipping section when they first tap into a product page.</li>
+                        <li>Participants did not observe the final item price update at the top of the PDP when making variation selections. This led some to believe the pricing they were seeing beneath a variation reflected additional cost for the product.</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="textWrap">
+                    <h2>Final designs</h2>
+                    <p>I made a few edits based on the feedback we got during user testing.<br>
+                        We reduced initial empty Delivery Shipping cards since it caused confusion for the loading state.</p>
+                </div>
+                <img src="img/PDP/Finaldesign_1.webp" alt="">
+                <div class="textWrap">
+                    <p>Because the price below variant was sometimes mistaken as additional price, we added in live price reflection on the buy bar at the bottom.</p>
+                </div>
+                <img src="img/PDP/Finaldesign_2.webp" alt="">
+                <div class="textWrap">
+                    <p>We also removed the logic that displayed store reviews for products without individual product reviews. Instead, we’ve introduced a 'New: No item ratings yet' message to provide a more accurate reflection of the product's review status.</p>
+                </div>
+                <img src="img/PDP/Finaldesign_3.webp" alt="">
+            </section>
+            <section>
+                <div class="textWrap">
+                    <h2>Hand-off</h2>
+                    <p>I meticulously prepared and delivered comprehensive specifications, including all edge cases, to ensure a smooth handoff to the engineering team. Given that the PDP supports multiple initiatives, I also ensured that my specifications aligned with and integrated the efforts of other teams.</p>
+                </div>
+                <img src="img/PDP/Handoff_1.webp" alt="">
+                <img src="img/PDP/Handoff_2.webp" alt="">
+            </section>
+            <section>
+                
+            </section>
         </div>
         </main>
         <nav>
