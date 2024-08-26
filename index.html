@@ -27,7 +27,7 @@
                 <h3 class="description">I design and co-founded <a href="gojiberry.app" >Gojiberry</a>. Previously at <a href="wish.com" >Wish</a>, <a href="https://apps.apple.com/us/app/google/id284815942" >Google</a>, <a href="https://metadesign.com/en/offices/beijing" >MetaDesign</a>.</h3>
                 <a href="about.html">About</a>
 
-                <ul>
+                <ul class="contactInfo">
                     <li><a href="https://www.linkedin.com/in/xinran-wu/">LinkedIn</a></li>
                     <li><a href="mailto:pomelofrost@gmail.com">Email</a></li>
                 </ul>
@@ -36,13 +36,13 @@
                 <h1>Gojiberry</h1>
                 <h4>TL;DR</h4>
                 <p>Gojiberry is a tool built for Shopify store owners to collect zero-party data about their customers.</p>
-                <img src="img/fairpricing/title_device.png" alt="">
+                <img src="img/gojiberry/display.webp" alt="">
             </div>
             <div id="tldr2" class="hidden">
                 <h1>Product Details Page on Wish</h1>
                 <h4>TL;DR</h4>
                 <p>I led the redesign of Product detail page on Wish with the goal to increase user trust and price transparency on our platform.</p>
-                <img src="img/fairpricing/title_device.png" alt="">
+                <img src="img/pdp/TLDR.webp" alt="">
             </div>
             <div id="tldr3" class="hidden">
                 <h1>Fair Pricing for Wish</h1>
@@ -51,12 +51,6 @@
                 <img src="img/fairpricing/title_device.png" alt="">
             </div>
             <!--
-            <div id="tldr2" class="hidden">
-                <h1>WholeStory</h1>
-                <h4>TL;DR</h4>
-                <p>With augmented reality, WholeStory expands the capabilities of food labeling by customizing them towards each person’s dietary needs and educating users with food traceability information.</p>
-                <img src="img/wholestory/title.png" alt="">
-            </div>
             <div id="tldr3" class="hidden">
                 <h1>Knock Knock</h1>
                 <h4>TL;DR</h4>
@@ -69,6 +63,12 @@
                 <h4>TL;DR</h4>
                 <p>During my time in the iOS Google App team, I was responsible for rethinking the onboarding experience for the app. Collaborating with engineers, product managers, and motion designers, I developed and refined the onboarding experience to connect the value propositions on the App Store with the first-launch experience and to educate users about app features. </p>
                 <img src="img/google/title.png" alt="">
+            </div>
+            <div id="tldr5" class="hidden">
+                <h1>WholeStory</h1>
+                <h4>TL;DR</h4>
+                <p>With augmented reality, WholeStory expands the capabilities of food labeling by customizing them towards each person’s dietary needs and educating users with food traceability information.</p>
+                <img src="img/wholestory/title.png" alt="">
             </div>
             <!--
             <div id="tldr5" class="hidden">
@@ -94,12 +94,12 @@
                     <p>0 to 1 product,SaaS tool</p>
                 </div>
                 <div class="individualProject" id="project2">
-                    <img src="img/project/fairpricing.png" alt="">
+                    <img src="img/project/pdp.png" alt="">
                     <span>
-                        <h4>Fair Pricing for Wish</h4>
-                        <p>User Education on the Wish App</p>
+                        <h4>Product details page on Wish</h4>
+                        <p>Increasing trust on platform with the PDP redesign</p>
                     </span>
-                    <p>Interface, User Education</p>
+                    <p>Redesign, Interface</p>
                 </div>
                 <div class="individualProject" id="project3">
                     <img src="img/project/fairpricing.png" alt="">
@@ -110,14 +110,6 @@
                     <p>Interface, User Education</p>
                 </div>
                 <!--
-                <div class="individualProject" id="project2">
-                    <img src="img/project/wholestory.png" alt="">
-                    <span>
-                        <h4>WholeStory</h4>
-                        <p>Augmented reality app</p>
-                    </span>
-                    <p>AR, Mobile, Service Design</p>
-                </div>
                 <div class="individualProject" id="project3">
                     <img src="img/project/knockknock.png" alt="">
                     <span>
@@ -134,6 +126,14 @@
                         <p>Welcome experience for the iOS Google App</p>
                     </span>
                     <p>User education, onboarding</p>
+                </div>
+                <div class="individualProject" id="project5">
+                    <img src="img/project/wholestory.png" alt="">
+                    <span>
+                        <h4>WholeStory</h4>
+                        <p>Augmented reality app</p>
+                    </span>
+                    <p>AR, Mobile, Service Design</p>
                 </div>
                 <!--
                 <div class="individualProject" id="project5">
@@ -178,7 +178,7 @@
             });            
             // Change here for slot
             $('#project1').click(function(){
-                //window.location.href = "fairpricing.html";
+                window.location.href = "gojiberry.html";
             });
             $('#project2').hover(function(){
                 $('#default').hide();
@@ -190,7 +190,7 @@
             });
             // Change here for slot
             $('#project2').click(function(){
-                // window.location.href = "wholestory.html";
+                 window.location.href = "pdp.html";
             });
             $('#project3').hover(function(){
                 $('#default').hide();
@@ -202,7 +202,7 @@
             });
             // Change here for slot
             $('#project3').click(function(){
-                // window.location.href = "agos.html";
+                window.location.href = "fairpricing.html";
             });
             $('#project4').hover(function(){
                 $('#default').hide();
@@ -214,7 +214,7 @@
             });
             // Change here for slot
             $('#project4').click(function(){
-                // window.location.href = "agos.html";
+                // window.location.href = "";
             });
             $('#project5').hover(function(){
                 $('#default').hide();
@@ -226,7 +226,7 @@
             });
             // Change here for slot
             $('#project5').click(function(){
-                // window.location.href = "agos.html";
+                window.location.href = "wholestory.html";
             });
         });
     </script>

@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: circle;
 }
 blockquote, q {
 	quotes: none;
@@ -247,13 +247,14 @@ p a{
     color:#ADADAD
 }
 
-ul{
+.contactInfo{
     position: absolute;
     bottom:2vw;
     display:flex;
     justify-content: space-evenly;
+    list-style:none;
 }
-ul li{
+.contactInfo li{
     padding-right:30px;
 }
 
@@ -281,7 +282,7 @@ ul li{
     text-align:left;
     padding-top:25px;
     padding-bottom:25px;
-    align-items:end;
+    align-items:center;
     /* cursor:pointer; */
 }
 
@@ -487,7 +488,7 @@ video{
     overflow:hidden;
     z-index:-10;
     position:absolute;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 #fairpricingDevice{
