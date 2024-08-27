@@ -74,29 +74,6 @@ a:active {
 } */
 
 
-/*          */
-/* mobile */
-/*          */
-
-@media only screen and (max-width: 640px) {
-    .row{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .left{
-        all:unset;
-    }
-
-    .right{
-        all:unset;
-        width:100vw;
-    }
-    .projectList{
-        all:unset;
-    }
-  }
-
 
 /*          */
 /* desktop */
@@ -274,7 +251,7 @@ p a{
 .right{
     background-color: #F9F9F9;
     height:100vh;
-    width:50vw;
+    width:55vw;
     padding-right:4vw;
     overflow:auto;
 }
@@ -678,3 +655,111 @@ img{
     max-height:70vh;
     width:auto;
 }
+
+/*          */
+/* mobile */
+/*          */
+
+@media only screen and (max-width: 640px) {
+    /*     index     */
+    .cursor{
+        all:unset;
+    }
+
+    h4{
+        font-size:1.125em;
+    }
+    .row{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .left{
+        all:unset;
+        margin: 36px;
+    }
+
+    .right{
+        all:unset;
+        width:90%;
+        background-color: #f9f9f9;
+    }
+    .projectList{
+        padding: 5%;
+        margin-top: 0px;
+    }
+
+    .experience-wrapper{
+        padding:5%;
+    }
+
+    .individualProject, #title{
+        column-gap:8px;
+        padding-top:8px;
+        padding-bottom:8px;
+    }
+
+    .contactInfo{
+        display:none;
+    }
+
+    .experience{
+        grid-template-columns:1fr;
+    }
+ /*     project     */
+    nav{
+        display:none;
+    }
+
+    header{
+        margin-left:0;
+        width:100vw;
+        height:100vh;
+    }
+
+    .backgroundImage{
+        height:40vh;
+        width:90vw;
+        position:relative;
+        margin:5vw;
+    }
+
+    header h1{
+        padding-top:5%;
+        padding-left:5%;
+        font-size:2em;
+    }
+
+    header h2{
+        padding-top:5%;
+        width:100%;
+        font-size:1.25em;
+    }
+
+    header section{
+        padding-bottom:5vh;
+        margin-top:5%;
+    }
+
+    header section *{
+        width:100%;
+    }
+    .content{
+        padding-top:24px;
+    }
+
+    .textWrap{
+        width:90vw;
+    }
+
+    .problemBlock{
+        flex-direction: column;
+        width:90vw;
+        gap:8px;
+    }
+
+    .problemBlock img{
+        width:100%;
+    }
+  }
