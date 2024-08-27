@@ -523,7 +523,7 @@ header h2{
 }
 
 header section{
-    padding-bottom:15vh;
+    padding-bottom:5vh;
     display:block;
 }
 
@@ -538,8 +538,9 @@ header section *{
 .pdpTitle{
     width:35vw;
     position:absolute;
-    left: 50vw;
-    top: 10vh;
+    top: 50%;
+   margin-top: -17.5vw; /* Half the height */
+   right:10vw;
 }
 
 .pdpTitleText{
@@ -555,7 +556,8 @@ header section *{
     width:40vw;
     position:absolute;
     left: 50vw;
-    top: 15vh;
+    top: 50%;
+    margin-top: -20vw; /* Half the height */
 }
 
 .gojiberryTitleText{
@@ -567,12 +569,22 @@ header section *{
 }
 
 .fairpricingTitle{
-    height:100vh;
+    width:40vw;
     position:absolute;
-    right: 0;
-    top: 0;
-    object-fit:cover;
-    z-index:-10;
+    right: 10vw;
+    top: 50%;
+   margin-top: -20vw; /* Half the height */
+}
+.fairpricingTitleText{
+    color:white;
+    background-color: #4E7A8B;
+}
+
+.fairpricingTitleText h1{
+    padding-top:30vh;
+}
+.fairpricingTitleText h2{
+    color:white;
 }
 /* end of header format */
 
@@ -762,7 +774,7 @@ img{
 
     .pdpTitle, .gojiberryTitle, .fairpricingTitle{
         all:unset;
-        width:90vw;
+        width:80vw;
         position:relative;
         margin:5vw;
     }
