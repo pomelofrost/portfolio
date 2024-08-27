@@ -79,8 +79,21 @@ a:active {
 /*          */
 
 @media only screen and (max-width: 640px) {
-    body {
-      display:none;
+    .row{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .left{
+        all:unset;
+    }
+
+    .right{
+        all:unset;
+        width:100vw;
+    }
+    .projectList{
+        all:unset;
     }
   }
 
