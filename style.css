@@ -78,7 +78,7 @@ a:active {
 /* mobile */
 /*          */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     body {
       display:none;
     }
@@ -283,7 +283,7 @@ p a{
     padding-top:25px;
     padding-bottom:25px;
     align-items:center;
-    /* cursor:pointer; */
+    cursor:pointer;
 }
 
 #title *{
@@ -378,6 +378,7 @@ p a{
 .experience-wrapper{
     padding-left:3vw;
     padding-top:136px;
+    padding-bottom:48px;
 }
 
 .experience-wrapper h1{
@@ -649,9 +650,9 @@ section *{
 }
 
 img{
-    /* width:100%; */
+    width:80%;
     height:auto;
-    max-width:80vw;
+    max-width:960px;
 }
 
 /* individual treatment */
