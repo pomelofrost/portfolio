@@ -215,7 +215,7 @@ p a{
     padding-top:60px;
     box-sizing:border-box;
     /* width:50vw; */
-    overflow:hidden;
+    /*overflow:hidden;*/
     /* only scroll right side */
 }
 
