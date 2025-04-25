@@ -236,14 +236,14 @@ p a{
 .hidden h4{
     color:#ADADAD
 }
-
+/*
 .contactInfo{
     position: absolute;
     bottom:2vw;
     display:flex;
     justify-content: space-evenly;
     list-style:none;
-}
+}*/
 .contactInfo li{
     padding-right:30px;
 }
