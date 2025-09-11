@@ -95,8 +95,10 @@ img{
     transition:all 0.3s ease;
     transition-property: background,transform;
     transform-origin: 100% 100%;
-    z-index:-1;
+    z-index:150;
     backdrop-filter: greyscale;
+    opacity:0;
+    visibility:hidden;
 }
 
 .link-grow{
@@ -106,6 +108,12 @@ img{
 
 .hovered-link{
     color:white
+}
+
+/* show custom cursor when inside page */
+.cursor.is-visible{
+    opacity:1;
+    visibility:visible;
 }
 /* typography */
 
@@ -195,6 +203,7 @@ a{
     z-index:200;
     color:#B0B0B0;
     font-size:16px;
+    position:relative;
 }
 a:hover{
     color:white;
@@ -215,6 +224,9 @@ p a{
     padding-top:60px;
     box-sizing:border-box;
     width:50vw;
+    height:100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
     /*overflow:hidden;*/
     /* only scroll right side */
 }
@@ -265,6 +277,11 @@ p a{
 
 .projectList{
     padding-top:3vh;
+}
+
+/* extra spacing under Google item in project list */
+#project4{
+    margin-bottom:24px;
 }
 
 .individualProject, #title{
@@ -358,6 +375,7 @@ p a{
 #aboutIntro{
     padding-top:0;
     padding-right:3vw;
+    padding-bottom:48px;
 }
 
 #aboutIntro img{
@@ -643,6 +661,12 @@ nav * img{
     background-color:#f9f9f9;
     padding-top: 8vh;
     padding-bottom: 8vh;
+}
+
+/* limit overall layout height and prevent page scroll; let columns scroll */
+.row{
+    height:100vh;
+    overflow:hidden;
 }
 
 section {
