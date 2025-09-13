@@ -156,6 +156,25 @@ h3{
     padding-bottom:20px;
 }
 
+.hero-text{
+    font-size:3rem;
+    line-height:1.2;
+    font-weight:400;
+    text-align:left;
+}
+
+.hero-text a{
+    font-size:inherit;
+    line-height:inherit;
+}
+
+.nav-link{
+    font-size:2rem;
+    line-height:1.2;
+    font-weight:400;
+    padding-left:0;
+}
+
 h4{
     font-weight:500;
     padding-top:20px;
@@ -341,7 +360,7 @@ p a{
 }
 
 .description{
-    padding-top:6vw;
+    padding-top:3vw;
     width:70%;
 }
 
