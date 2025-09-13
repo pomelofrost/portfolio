@@ -14,6 +14,7 @@
         <!-- brarba.js -->
         <script src="https://unpkg.com/@barba/core"></script>
         <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -34,22 +35,22 @@
                 </ul>
             </div>
             <div id="tldr1" class="hidden">
-                <h4>Gojiberry</h4>
+                <h1>EYEQ</h1>
+                <h4>TL;DR</h4>
+                <p>EYEQ lets AI handle the first interview in the new grad hiring process in Japan—bringing out real stories and turning them into fair insights for recruiters.</p>
+                <img src="img/eyeq/title_bg.png" alt="">
+            </div>
+            <div id="tldr2" class="hidden">
+                <h1>Gojiberry</h1>
                 <h4>TL;DR</h4>
                 <p>Gojiberry is a tool built for Shopify store owners to collect zero-party data about their customers.</p>
                 <img src="img/gojiberry/display.webp" alt="">
             </div>
-            <div id="tldr2" class="hidden">
-                <h4>Product Details Page on Wish</h4>
+            <div id="tldr3" class="hidden">
+                <h1>Product Details Page on Wish</h1>
                 <h4>TL;DR</h4>
                 <p>I led the redesign of Product detail page on Wish with the goal to increase user trust and price transparency on our platform.</p>
                 <img src="img/pdp/TLDR.webp" alt="">
-            </div>
-            <div id="tldr3" class="hidden">
-                <h4>Fair Pricing for Wish</h4>
-                <h4>TL;DR</h4>
-                <p>Fair pricing is a new section in the feed and product details page on Wish to educate user on the cost makeup of Wish products to help highlight the value behind the prices of products on Wish.</p>
-                <img src="img/fairpricing/title_device.png" alt="">
             </div>
             <!--
             <div id="tldr3" class="hidden">
@@ -87,7 +88,15 @@
                     <h4>Name</h4>
                     <h4>Type</h4>
                 </div>
-                <div class="individualProject" id="project1" onclick="location.href='gojiberry.html';">
+                <div class="individualProject" id="project1" onclick="window.open('https://eyeq.jp', '_blank');">
+                    <img src="img/project/eyeq.png" alt="">
+                    <span>
+                        <h4>EYEQ</h4>
+                        <p>AI Interview platform for new graduate students in Japan</p>
+                    </span>
+                    <p>0 to 1, SaaS, AI</p>
+                </div>
+                <div class="individualProject" id="project2" onclick="location.href='gojiberry.html';">
                     <img src="img/project/gojiberry.png" alt="">
                     <span>
                         <h4>Gojiberry</h4>
@@ -95,21 +104,13 @@
                     </span>
                     <p>0 to 1 product,SaaS tool</p>
                 </div>
-                <div class="individualProject" id="project2">
+                <div class="individualProject" id="project3" onclick="location.href='pdp.html';">
                     <img src="img/project/pdp.png" alt="">
                     <span>
                         <h4>Product details page on Wish</h4>
                         <p>Increasing trust on platform with the PDP redesign</p>
                     </span>
                     <p>Redesign, Interface</p>
-                </div>
-                <div class="individualProject" id="project3">
-                    <img src="img/project/fairpricing.png" alt="">
-                    <span>
-                        <h4>Fair Pricing for Wish</h4>
-                        <p>User Education on the Wish App</p>
-                    </span>
-                    <p>Interface, User Education</p>
                 </div>
                 <!--
                 <div class="individualProject" id="project3">
@@ -155,6 +156,14 @@
                 <h4>Name</h4>
                 <h4>Type</h4>
             </div>
+            <div class="individualProject" onclick="window.open('https://eyeq.jp', '_blank');">
+                <img src="img/project/eyeq.png" alt="">
+                <span>
+                    <h4>EYEQ</h4>
+                    <p>AI Interview platform for new graduate students in Japan</p>
+                </span>
+                <p>0 to 1, SaaS, AI</p>
+            </div>
             <div class="individualProject" onclick="location.href='gojiberry.html';">
                 <img src="img/project/gojiberry.png" alt="">
                 <span>
@@ -170,14 +179,6 @@
                     <p>Increasing trust on platform with the PDP redesign</p>
                 </span>
                 <p>Redesign, Interface</p>
-            </div>
-            <div class="individualProject" onclick="location.href='fairpricing.html';">
-                <img src="img/project/fairpricing.png" alt="">
-                <span>
-                    <h4>Fair Pricing for Wish</h4>
-                    <p>User Education on the Wish App</p>
-                </span>
-                <p>Interface, User Education</p>
             </div>
             <div class="individualProject" onclick="location.href='google.html';">
                 <img src="img/project/google.png" alt="">
@@ -220,7 +221,7 @@
             });            
             // Change here for slot
             $('#project1').click(function(){
-                window.location.href = "gojiberry.html";
+                window.open('https://eyeq.jp', '_blank');
             });
             $('#project2').hover(function(){
                 $('#default').hide();
@@ -232,7 +233,7 @@
             });
             // Change here for slot
             $('#project2').click(function(){
-                 window.location.href = "pdp.html";
+                 window.location.href = "gojiberry.html";
             });
             $('#project3').hover(function(){
                 $('#default').hide();
@@ -244,7 +245,7 @@
             });
             // Change here for slot
             $('#project3').click(function(){
-                window.location.href = "fairpricing.html";
+                window.location.href = "pdp.html";
             });
             $('#project4').hover(function(){
                 $('#default').hide();

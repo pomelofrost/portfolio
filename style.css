@@ -117,29 +117,10 @@ img{
 }
 /* typography */
 
-@font-face {
-    font-family:"ReaderPro";
-    font-weight:400;
-    font-style: normal;
-    src: url("font/ReaderPro.woff2") format("woff2")
-}
-
-@font-face {
-    font-family:"ReaderPro";
-    font-weight:500;
-    font-style: normal;
-    src: url("font/ReaderPro500.woff2") format("woff2")
-}
-
-@font-face {
-    font-family:"ReaderPro";
-    font-weight:700;
-    font-style: normal;
-    src: url("font/ReaderPro700.woff2") format("woff2")
-}
+/* Satoshi font loaded via Fontshare */
 
 h1,h2,h3,h4,h5,a,p{
-    font-family:"ReaderPro", sans-serif;
+    font-family:"Satoshi", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size:20px;
