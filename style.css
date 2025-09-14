@@ -558,6 +558,21 @@ header section *{
     margin-top:8px;
 }
 
+.google{
+    background-image: url("img/google/title_bg.png");
+    background-size: cover;   /* Makes sure the image covers the whole header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: white; /* Ensure text is readable */
+}
+.pdpBg{
+    background-image: url("img/pdp/title_bg.png");
+    background-size: cover;   /* Makes sure the image covers the whole header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: white; /* Ensure text is readable */
+}
+
 .pdpTitle{
     width:35vw;
     position:absolute;
@@ -566,14 +581,22 @@ header section *{
    right:10vw;
 }
 
+.googleTitle{
+    width:60vw;
+    position:absolute;
+    top: 60%;
+   margin-top: -25vw; /* Half the height */
+   right:-5vw;
+}
+
 .pdpTitleText{
     width:40vw;
     line-height:130%;
-    color:#FF5622;
+    color:#000000;
 }
 
 .pdpTitleContent *{
-    color:#FF5622;
+    color:#000000;
 }
 .gojiberryTitle{
     width:40vw;
@@ -658,7 +681,7 @@ nav * img{
 
 /* content page */
 .content{
-    background-color:#f9f9f9;
+    background-color:#ffffff;
     padding-top: 8vh;
     padding-bottom: 8vh;
 }
