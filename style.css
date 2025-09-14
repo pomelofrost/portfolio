@@ -183,9 +183,9 @@ h4{
 h5{
     font-weight:700;
     padding-top:20px;
-    line-height:30px;
-    font-size:16px;
-    color:#adadad;
+    line-height:48px;
+    font-size:32px;
+    color:#000000;
     margin-bottom:10px;
     text-align:left;
 }
@@ -661,6 +661,35 @@ nav * img{
     background-color:#f9f9f9;
     padding-top: 8vh;
     padding-bottom: 8vh;
+}
+
+/* Impact Metrics Styling */
+.impact-metrics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.metric{
+    text-align: center;
+    flex: 1;
+}
+
+.metric-value{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #DC4D20;
+    line-height: 1.5;
+    font-family: "Satoshi", sans-serif;
+}
+
+.metric-label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.2;
+    font-family: "Satoshi", sans-serif;
 }
 
 /* limit overall layout height and prevent page scroll; let columns scroll */
