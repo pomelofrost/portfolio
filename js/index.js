@@ -1,34 +1,24 @@
+const mouseCursor = document.querySelector('.cursor');
 
-
-let mouseCursor = document.querySelector('.cursor');
-let navlinks = document.querySelectorAll('a');
-// let rightDiv = document.querySelector('.right');
-
-document.addEventListener('mousemove',cursor);
-document.addEventListener('mouseenter', () => {
-    mouseCursor.classList.add('is-visible');
-});
-document.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('is-visible');
-});
-
-function cursor(e){
-    console.log(e);
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX + "px";
-    // ensure visible once mouse moves inside the page
-    if (!mouseCursor.classList.contains('is-visible')) {
+if (mouseCursor) {
+    document.addEventListener('mousemove', (e) => {
+        mouseCursor.style.top = e.clientY + 'px';
+        mouseCursor.style.left = e.clientX + 'px';
         mouseCursor.classList.add('is-visible');
-    }
-}
+    });
 
-navlinks.forEach(link => {
-    link.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('link-grow');
-        link.classList.remove("hovered-link");
+    document.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('is-visible');
     });
-    link.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('link-grow');
-        link.classList.add("hovered-link");
+
+    document.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('mouseleave', () => {
+            mouseCursor.classList.remove('link-grow');
+            link.classList.remove('hovered-link');
+        });
+        link.addEventListener('mouseover', () => {
+            mouseCursor.classList.add('link-grow');
+            link.classList.add('hovered-link');
+        });
     });
-});
+}
