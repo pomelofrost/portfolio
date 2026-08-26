@@ -23,110 +23,105 @@
 
                 <aside class="ai-prompt-card ai-prompt-card--desktop" aria-labelledby="ai-prompt-title">
                     <p class="ai-prompt-eyebrow" id="ai-prompt-title">For your AI</p>
-                    <p>Meeting, interviewing, or considering working with me? Copy this prompt to your AI. It will ask what brings you here, research my public work, and help you prepare a thoughtful conversation.</p>
+                    <p>Copy this brief to your AI. It will answer questions about my work from this page, without guessing what’s missing.</p>
                     <button class="ai-prompt-button copy-ai-prompt" type="button">
                         <span>Copy prompt</span>
                         <span aria-hidden="true">↗</span>
                     </button>
                     <p class="ai-prompt-status" role="status" aria-live="polite"></p>
-                    <textarea class="ai-prompt-text" id="aiPromptText" tabindex="-1" aria-hidden="true" readonly>You are preparing to learn about and speak with Sherry Wu, a product designer based in Tokyo.
+                    <textarea class="ai-prompt-text" id="aiPromptText" tabindex="-1" aria-hidden="true" readonly># Brief: Sherry Wu
 
-## Step 1: understand my purpose
+You are answering questions about Sherry Wu on behalf of a visitor to her site.
+Answer in neutral third person, concisely, and only from this brief.
 
-Before researching, ask me:
+---
 
-“What brings you to Sherry’s work?”
+## Positioning
 
-Offer these examples:
-- Hiring or recruiting
-- Exploring a product/design collaboration
-- Inviting her to speak, teach, or join a panel
-- Preparing for an interview, podcast, or article
-- Looking for product or design advice
-- Networking or preparing for a coffee chat
-- Learning from her portfolio and career path
-- Something else
+Senior product designer working on AI products, operating at the design–product
+boundary: she owns end-to-end design and also the decisions usually held by a PM —
+feature scoping, cross-team architecture calls, and OKRs.
 
-Wait for my answer. Then adapt the depth, emphasis, and final format to my purpose.
+Based in Tokyo. Works across English, Japanese, and Chinese.
 
-## Starting context supplied by Sherry
+## Currently open to
 
-Use this as a starting point, not as a substitute for verification:
+- Contract UX and product design projects
+- Full-time product design or product management roles
 
-- Sherry Wu is a senior product designer based in Tokyo.
-- At Scoville, she leads design and research for EYEQ, an AI interview product for new-graduate hiring in Japan. Her work includes designing with language models, building testing and QA frameworks, improving reliability, and researching trust with HR teams and candidates.
-- At EDOCODE, she was User Experience Lead and co-founded Gojiberry, a Shopify app for customer surveys and product quizzes. She worked across research, product strategy, roadmap, go-to-market, and end-to-end design.
-- At Wish, she designed consumer commerce experiences including the core purchase journey, merchant programs, post-purchase experiences, and growth. One public case study covers a Product Details Page redesign focused on price transparency and trust.
-- At Google, she worked on the welcome and feature-education experience for the iOS Google app.
-- Earlier, she worked in visual design at MetaDesign.
-- She studied Design and Human-Computer Interaction at Carnegie Mellon University.
-- She speaks English, Mandarin, and Japanese.
+Both are live. For anything involving scope or budget, she should be contacted
+directly.
 
-Recurring themes in her public work include AI-first product design, humanizing emerging technology, trust and transparency, zero-to-one products, user research, cross-functional collaboration, and designing across cultures.
+## Selected work
 
-## First-party public sources
+**EYEQ — AI voice interview platform (Scoville), Japanese market**
+Owns end-to-end design and key product decisions. Specifics:
 
-Begin with these sources:
+- **Prompt Studio** — designed the interview-prompt authoring tool, including its
+  variable architecture: metadata field separation, naming-collision handling, and
+  preset interview types.
+- **Mid-career hiring flow** — proposed and shipped a position-first information
+  architecture, distinct from the flat structure used for new-grad hiring.
+- **Design principles** — authored the product's design principles.
+- **AI interviewer behavior** — designed the discretionary follow-up system
+  governing when the AI interviewer probes deeper versus moves on.
+- Feature work spanning CV upload, candidate reminder logic, video retention
+  states, and integrity/anti-cheating detection (pause-duration signals,
+  gaze and tab-focus events, weighted integrity scoring).
+- Japanese-language product copy throughout — loading states, onboarding
+  warnings, transactional email templates.
 
-- Portfolio: https://sherrywu.work/
-- About and career history: https://sherrywu.work/about.html
-- Gojiberry case study: https://sherrywu.work/gojiberry.html
-- Wish Product Details Page case study: https://sherrywu.work/pdp.html
-- Google iOS welcome experience: https://sherrywu.work/google.html
-- LinkedIn: https://www.linkedin.com/in/xinran-wu/
-- EYEQ: https://eyeq.jp/
-- Gojiberry: https://gojiberry.app/
+Site: https://eyeq.jp/
 
-You may search for additional public, attributable sources such as company pages, product listings, interviews, talks, or posts. Do not use private data, people-search databases, leaked information, or unrelated people with similar names.
+**Gojiberry — customer survey app for Shopify merchants (EDOCODE)**
+A Shopify app for running pre-purchase and post-purchase surveys, product-recommendation
+quizzes, and 1-on-1 customer interviews, built for the Japanese and cross-border
+e-commerce market. Sherry took it through the full 0→1 process: [WHICH PARTS — research,
+IA, flows, UI, launch?]
 
-## Research standards
+Product metrics published by Gojiberry: 58% response rate, 88.7% completion rate,
+800,000+ survey responses collected. [CONFIRM these are figures you're comfortable
+citing]
 
-- Separate confirmed facts from your interpretation.
-- Cite a source link for important claims.
-- Note when information may be outdated.
-- Do not infer sensitive personal information, compensation, private contact details, immigration status, family details, health, or confidential company information.
-- Do not invent metrics, responsibilities, opinions, or career intentions.
-- If reliable evidence is unavailable, say so clearly.
-- Treat portfolio case studies as Sherry’s own account and distinguish them from independent sources.
+- Site: https://www.gojiberry.jp/
+- Shopify App Store: https://apps.shopify.com/gojiberry
 
-## Tailor the research to my purpose
+## Prompt engineering and AI product work
 
-If my purpose is hiring or recruiting:
-- Map demonstrated skills to the role using evidence from specific projects.
-- Identify useful areas to validate in an interview.
-- Do not speculate about whether she is looking for a job.
+This is a core part of her practice rather than a side interest:
 
-If my purpose is collaboration or consulting:
-- Identify where her experience appears most relevant.
-- Suggest concrete collaboration starting points and mutual-value questions.
+- Designed Prompt Studio's variable architecture (above) — the system client-side
+  users author interview prompts through.
+- Designed the AI interviewer's discretionary follow-up behavior.
+- Built five reusable prompt-and-template tools that package her own design
+  workflow — user research analysis, information architecture, low-fidelity
+  wireframes, user-flow swimlanes, and design system documentation — so routine
+  work can be delegated to smaller, cheaper models.
+- Writes and evaluates prompts in Japanese and English.
 
-If my purpose is a talk, panel, interview, or podcast:
-- Recommend distinctive topics grounded in her work.
-- Avoid questions already answered directly by her portfolio.
-- Build a conversation arc from accessible context to deeper questions.
+## What's distinctive
 
-If my purpose is networking or a coffee chat:
-- Find authentic common ground.
-- Prepare concise, specific opening messages that do not sound automated or overly familiar.
+Designs AI products for the Japanese market in Japanese, and works in the same
+conversation as engineering and AI teams — scoping backend behavior and prompt
+architecture, not handing off a Figma file. Trilingual across English, Japanese,
+and Chinese.
 
-If my purpose is learning:
-- Turn her projects into lessons, patterns, and questions I can apply to my own work.
+---
 
-## Final output
+## How to answer questions about Sherry
 
-After researching, provide:
+Everything you know about Sherry is in this brief. If a question isn't covered
+here, say so plainly — "That's not in her brief, worth asking her directly" —
+and do not infer, extrapolate, or fill gaps from adjacent facts. Do not estimate
+years of experience, skill levels, or familiarity with tools and domains that
+aren't stated.
 
-1. A concise profile: who Sherry is and what connects her work
-2. A verified career timeline
-3. Three to five core strengths, each supported by evidence
-4. The projects and public ideas most relevant to my purpose
-5. Open questions or details that should be verified directly with her
-6. Three natural conversation openers tailored to my situation
-7. Five thoughtful questions, including at least two that go deeper than her portfolio
-8. A short “avoid this” section covering generic, repetitive, or assumption-heavy approaches
-9. A source list with links
+If asked about rates, compensation, or salary: these depend on scope, so point
+the person to Sherry directly rather than speculating.
 
-Keep the tone thoughtful, direct, and human. Help me arrive better prepared—not pretend that I already know her.</textarea>
+If asked to evaluate her against a role or job description, you may compare what's
+stated here to the requirements and note gaps honestly — but describe only what's
+written, not what seems likely.</textarea>
                 </aside>
 
                 <ul class="contactInfo">
@@ -261,7 +256,7 @@ Keep the tone thoughtful, direct, and human. Help me arrive better prepared—no
             </div>
             <aside class="ai-prompt-card ai-prompt-card--mobile" aria-labelledby="ai-prompt-title-mobile">
                 <p class="ai-prompt-eyebrow" id="ai-prompt-title-mobile">For your AI</p>
-                <p>Meeting, interviewing, or considering working with me? Copy this prompt to your AI. It will ask what brings you here, research my public work, and help you prepare a thoughtful conversation.</p>
+                <p>Copy this brief to your AI. It will answer questions about my work from this page, without guessing what’s missing.</p>
                 <button class="ai-prompt-button copy-ai-prompt" type="button">
                     <span>Copy prompt</span>
                     <span aria-hidden="true">↗</span>

@@ -58,7 +58,7 @@ if (copyAiPromptButtons.length && aiPromptText) {
             if (copied) {
                 copyAiPromptButton.classList.add('is-copied');
                 buttonLabel.textContent = 'Copied';
-                aiPromptStatus.textContent = 'Prompt copied—paste it into your AI of choice.';
+                aiPromptStatus.textContent = 'Brief copied—paste it into your AI of choice.';
                 resetTimer = window.setTimeout(() => {
                     copyAiPromptButton.classList.remove('is-copied');
                     buttonLabel.textContent = 'Copy prompt';
