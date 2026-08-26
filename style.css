@@ -269,6 +269,10 @@ p a{
     background:#ffffff;
 }
 
+.ai-prompt-card--mobile{
+    display:none;
+}
+
 .ai-prompt-card p{
     margin:0;
 }
@@ -957,6 +961,15 @@ img{
         width:100%;
         margin-top:28px;
         padding:18px;
+    }
+
+    .ai-prompt-card--desktop{
+        display:none;
+    }
+
+    .ai-prompt-card--mobile{
+        display:block;
+        margin:8px 0 28px;
     }
 
     .contactInfo{

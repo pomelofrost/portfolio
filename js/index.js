@@ -23,14 +23,10 @@ if (mouseCursor) {
     });
 }
 
-const copyAiPromptButton = document.querySelector('#copyAiPrompt');
+const copyAiPromptButtons = document.querySelectorAll('.copy-ai-prompt');
 const aiPromptText = document.querySelector('#aiPromptText');
-const aiPromptStatus = document.querySelector('#aiPromptStatus');
 
-if (copyAiPromptButton && aiPromptText && aiPromptStatus) {
-    const buttonLabel = copyAiPromptButton.querySelector('span');
-    let resetTimer;
-
+if (copyAiPromptButtons.length && aiPromptText) {
     const copyWithFallback = () => {
         aiPromptText.focus();
         aiPromptText.select();
@@ -40,29 +36,37 @@ if (copyAiPromptButton && aiPromptText && aiPromptStatus) {
         return copied;
     };
 
-    copyAiPromptButton.addEventListener('click', async () => {
-        let copied = false;
+    copyAiPromptButtons.forEach((copyAiPromptButton) => {
+        const buttonLabel = copyAiPromptButton.querySelector('span');
+        const aiPromptStatus = copyAiPromptButton
+            .closest('.ai-prompt-card')
+            .querySelector('.ai-prompt-status');
+        let resetTimer;
 
-        try {
-            await navigator.clipboard.writeText(aiPromptText.value.trim());
-            copied = true;
-        } catch (error) {
-            copied = copyWithFallback();
-        }
+        copyAiPromptButton.addEventListener('click', async () => {
+            let copied = false;
 
-        window.clearTimeout(resetTimer);
+            try {
+                await navigator.clipboard.writeText(aiPromptText.value.trim());
+                copied = true;
+            } catch (error) {
+                copied = copyWithFallback();
+            }
 
-        if (copied) {
-            copyAiPromptButton.classList.add('is-copied');
-            buttonLabel.textContent = 'Copied';
-            aiPromptStatus.textContent = 'Prompt copied—paste it into your AI of choice.';
-            resetTimer = window.setTimeout(() => {
-                copyAiPromptButton.classList.remove('is-copied');
-                buttonLabel.textContent = 'Copy prompt';
-                aiPromptStatus.textContent = '';
-            }, 4000);
-        } else {
-            aiPromptStatus.textContent = 'Copy failed. Please try again in another browser.';
-        }
+            window.clearTimeout(resetTimer);
+
+            if (copied) {
+                copyAiPromptButton.classList.add('is-copied');
+                buttonLabel.textContent = 'Copied';
+                aiPromptStatus.textContent = 'Prompt copied—paste it into your AI of choice.';
+                resetTimer = window.setTimeout(() => {
+                    copyAiPromptButton.classList.remove('is-copied');
+                    buttonLabel.textContent = 'Copy prompt';
+                    aiPromptStatus.textContent = '';
+                }, 4000);
+            } else {
+                aiPromptStatus.textContent = 'Copy failed. Please try again in another browser.';
+            }
+        });
     });
 }
