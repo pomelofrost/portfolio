@@ -22,3 +22,51 @@ if (mouseCursor) {
         });
     });
 }
+
+const copyAiPromptButtons = document.querySelectorAll('.copy-ai-prompt');
+const aiPromptText = document.querySelector('#aiPromptText');
+
+if (copyAiPromptButtons.length && aiPromptText) {
+    const copyWithFallback = () => {
+        aiPromptText.focus();
+        aiPromptText.select();
+        aiPromptText.setSelectionRange(0, aiPromptText.value.length);
+        const copied = document.execCommand('copy');
+        window.getSelection()?.removeAllRanges();
+        return copied;
+    };
+
+    copyAiPromptButtons.forEach((copyAiPromptButton) => {
+        const buttonLabel = copyAiPromptButton.querySelector('span');
+        const aiPromptStatus = copyAiPromptButton
+            .closest('.ai-prompt-card')
+            .querySelector('.ai-prompt-status');
+        let resetTimer;
+
+        copyAiPromptButton.addEventListener('click', async () => {
+            let copied = false;
+
+            try {
+                await navigator.clipboard.writeText(aiPromptText.value.trim());
+                copied = true;
+            } catch (error) {
+                copied = copyWithFallback();
+            }
+
+            window.clearTimeout(resetTimer);
+
+            if (copied) {
+                copyAiPromptButton.classList.add('is-copied');
+                buttonLabel.textContent = 'Copied';
+                aiPromptStatus.textContent = 'Brief copied—paste it into your AI of choice.';
+                resetTimer = window.setTimeout(() => {
+                    copyAiPromptButton.classList.remove('is-copied');
+                    buttonLabel.textContent = 'Copy prompt';
+                    aiPromptStatus.textContent = '';
+                }, 4000);
+            } else {
+                aiPromptStatus.textContent = 'Copy failed. Please try again in another browser.';
+            }
+        });
+    });
+}
